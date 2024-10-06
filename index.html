@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Routine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Class Routine</h1>
+        <h3>Section-D</h3>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showDay('sunday')">Sunday</a></li>
+                <li><a href="#" onclick="showDay('monday')">Monday</a></li>
+                <li><a href="#" onclick="showDay('tuesday')">Tuesday</a></li>
+                <li><a href="#" onclick="showDay('wednesday')">Wednesday</a></li>
+                <li><a href="#" onclick="showDay('thursday')">Thursday</a></li>
+                <li><a href="#" onclick="showDay('class-test')">Class Test</a></li>
+            </ul>
+        </nav>
+        <div>
+            <label for="subject-select">Course Materials:</label>
+            <select id="subject-select" onchange="showFiles()">
+                <option value="">--Choose a Subject--</option>
+                <option value="cse">CSE-OOP</option>
+                <option value="discrete">DISCRETE MATH</option>
+                <option value="math">MATH</option>
+                 <option value="eee">EEE</option>
+                  <option value="chemistry">CHEMISTRY</option>
+            </select>
+            <button id="upload-button" onclick="uploadFile()" style="display:none;">Upload File</button>
+        </div>
+    </header>
+
+    <section id="routine">
+        <div id="sunday" class="day" >
+            <h2>Sunday</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+                <tr>   
+                    <td>12:00 PM - 1:30 PM</td>
+                    <td>CSE-OOP</td>
+                    <td>DH</td>
+                    <td>NR1</td>
+                </tr>
+                <tr>   
+                    <td>1:30 PM - 3:00 PM</td>
+                    <td>MATH</td>
+                    <td>AKS</td>
+                    <td>NR1</td>
+                </tr>
+                <tr>  
+                    <td>3:00 PM - 4:30 PM</td>
+                    <td>CHEMISTRY Lab (G2)</td>
+                    <td>[MMR2][JA]</td>
+                    <td>Lab-117</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="monday" class="day" style="display:none;">
+            <h2>Monday</h2>
+             <table>
+                <tr>    
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+                <tr>   
+                    <td>9:00 AM - 10:30 AM</td>
+                    <td>CHEMISTRY Lab (G1)</td>
+                    <td>[MMR2][RA2]</td>
+                    <td>Lab-117</td>
+                </tr>
+                <tr>   
+                    <td>10:30 AM - 12:00 PM</td>
+                    <td>DISCRETE MATH</td>
+                    <td>JF</td>
+                    <td>Senate</td>
+                </tr>
+                <tr>   
+                    <td>12:00 PM - 1:30 PM</td>
+                    <td>EEE</td>
+                    <td>ZM</td>
+                    <td>Senate</td>
+                </tr>
+            </table>
+        </div>
+
+       <div id="tuesday" class="day" style="display:none;">
+            <h2>Tuesday</h2>
+             <table>
+                <tr>    
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+                <tr> 
+                    <td>1:30 PM - 2:30 PM</td>
+                    <td>CHEMISTRY</td>
+                    <td>SP</td>
+                    <td>514</td>
+                </tr>
+                <tr>   
+                    <td>3:00 PM - 4:30 PM</td>
+                    <td>CSE-OOP</td>
+                    <td>DH</td>
+                    <td>NR2</td>
+                </tr>
+                <tr>  
+                    <td>4:30 PM - 6:00 PM</td>
+                    <td>DISCRETE MATH</td>
+                    <td>JF</td>
+                    <td>NR2</td>
+                </tr>
+            </table>
+        </div>
+
+<div id="wednesday" class="day" style="display:none;">
+            <h2>Wednesday</h2>
+             <table>
+                <tr>    
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+                <tr>   
+                    <td>9:00 AM - 11:15 AM</td>
+                    <td>CSE Lab</td>
+                    <td>[MMR2][RA2]</td>
+                    <td>Lab-104</td>
+                </tr>
+                <tr>   
+                    <td>12:30 PM - 1:30 PM</td>
+                    <td>CHEMISRTY</td>
+                    <td>SP</td>
+                    <td>314</td>
+                </tr>
+                <tr>   
+                    <td>1:30 PM - 3:00 PM</td>
+                    <td>EEE Lab</td>
+                    <td>[ZM][AU]</td>
+                    <td>Lab-127</td>
+                </tr>
+            </table>
+        </div>
+
+
+    <div id="thursday" class="day" style="display:none;">
+            <h2>Thursday</h2>
+             <table>
+                <tr>    
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+                <tr> 
+                    <td>1:30 PM - 2:30 PM</td>
+                    <td>MATH</td>
+                    <td>AKS</td>
+                    <td>509</td>
+                </tr>
+                <tr>   
+                    <td>3:00 PM - 4:30 PM</td>
+                    <td>EEE</td>
+                    <td>ZM</td>
+                    <td>412</td>
+                </tr>
+            </table>
+        </div>
+
+        
+       <!-- Class Test Countdown Section -->
+        <div id="class-test" class="day" style="display:none;">
+            <div class="class-test">
+              
+                <div id="test-math">
+                    <p>Mathematics CT Date: <strong id="math-date">1:30 PM, November 25, 2024</strong></p>
+                    <p>Time Remaining: <strong id="math-remaining"></strong></p>
+                    <p>Exam Topic: <strong id="math-topic">Vector Algebra</strong></p>
+                </div>
+                <div id="test-discrete">
+                    <p>Discrete Math CT Date: <strong id="discrete-date">12:00 PM, November 1, 2024</strong></p>
+                    <p>Time Remaining: <strong id="discrete-remaining"></strong></p>
+                    <p>Exam Topic: <strong id="discrete-topic">Memory Representation of Graph</strong></p>
+                </div>
+                <div id="test-chemistry">
+                    <p>Chemistry CT Date: <strong id="chemistry-date">November 5, 2024</strong></p>
+                    <p>Time Remaining: <strong id="chemistry-remaining"></strong></p>
+                     <p>Exam Topic: <strong id="chemistry-topic">Freezing point & Osmotic Pressure</strong></p>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+    <footer>
+        <p>&copy; 2024 raihan. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

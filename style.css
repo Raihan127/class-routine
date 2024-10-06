@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #B0E0E6;
+}
+
+header {
+    background-color:#4682B4;
+    color: silver;
+    padding: 15px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header h3 {
+   margin: 1;
+   color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Class Test Countdown */
+.class-test {
+    margin-top: 0px;
+    font-size: 22px;
+    text-align: center;
+    background-color: white;
+}
+
+#test-math {
+    color: #A52A2A; 
+    margin-bottom: 40px;
+}
+
+#test-discrete {
+    color: #483D8B;
+    margin-bottom: 40px;
+}
+
+#test-chemistry {
+    color: #1E90FF; 
+    margin-bottom: 40px;
+}
+
+.class-test div {
+    margin: 0px 0; /* Optional: Add some spacing between paragraphs */
+}
+
+section#routine {
+    padding: 10px;
+}
+
+.day {
+    background-color: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 11px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+tr:hover {
+    background-color: #f1f1f1;
+}
+footer {
+    text-align: center;
+    padding: 0px;
+    background-color: #708090;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
+}
+/* Additional Styles for File Upload Section */
+#file-section {
+    background-color: white;
+    margin: 20px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#file-list {
+    margin-top: 10px;
+}
+
+#file-list div {
+    margin-bottom: 5px;
+}
+
