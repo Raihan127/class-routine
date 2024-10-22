@@ -1,29 +1,10 @@
-function showDay(day) {
-    // Hide all day sections
-    const days = document.getElementsByClassName('day');
-    for (let i = 0; i < days.length; i++) {
-        days[i].style.display = 'none';
-    }
-
-    // Show the selected day section
-    document.getElementById(day).style.display = 'block';
-}
-
-// Default: Show Sunday's routine on page load
-window.onload = function() {
-    showDay('sunday');
-    updateCountdowns();
-};
-
-
-
 // Function to start countdown for all class tests
 function startCountdown() {
     // Test Dates
     const testDates = {
-        math: new Date("November 25, 2024 01:30:00").getTime(),  //akhan theka CT er date change korte hobe
-        discrete: new Date("November 1, 2024 00:00:00").getTime(), 
-        chemistry: new Date("November 5, 2024 00:00:00").getTime()
+        math: new Date("November 25, 2024 01:30:00").getTime(),  // Change CT dates here
+        discrete: new Date("November 20, 2024 00:00:00").getTime(),
+        chemistry: new Date("November 15, 2024 00:00:00").getTime()
     };
 
     // Update countdown every second
@@ -52,65 +33,107 @@ function updateCountdown(subject, testDate) {
     }
 }
 
-// Start the countdown when the page loads
-window.onload = startCountdown;
-
-
-
-
-
-
-const files = {
-    cse: [],
-discrete: [],
-    math: [],
-   eee: [],
-  chemistry: []
-};
-
-// Show the selected day and reset file section
+// Function to show the selected day and hide others
 function showDay(day) {
     const days = document.getElementsByClassName('day');
     for (let i = 0; i < days.length; i++) {
         days[i].style.display = 'none';
     }
     document.getElementById(day).style.display = 'block';
-    document.getElementById('file-section').style.display = 'none'; // Hide file section
+
+    // Hide course material section when showing routine
+    document.getElementById('course-material-section').style.display = 'none';
+    document.getElementById('pdf-viewer-section').style.display = 'none';
+
+    // Show routine section when navigating back to days or class test
+    const routineSection = document.getElementById('routine');
+    routineSection.style.display = 'block';
 }
 
-// Show files for selected subject
-function showFiles() {
-    const subject = document.getElementById('subject-select').value;
-    const fileList = document.getElementById('file-list');
-    fileList.innerHTML = ''; // Clear previous files
+// Function to show course material links for selected subject
+function showCourseMaterial() {
+    const selectedSubject = document.getElementById('subject-select').value;
+    const courseMaterialSection = document.getElementById('course-material-section');
+    const pdfLinks = document.getElementById('pdf-links');
+    const pdfViewerSection = document.getElementById('pdf-viewer-section');
+    const routineSection = document.getElementById('routine');
+    const classTestSection = document.getElementById('class-test');
+    const headerSection = document.querySelector('header');
+    
+    // Hide the PDF viewer initially
+    pdfViewerSection.style.display = 'none';
 
-    if (subject) {
-        document.getElementById('file-section').style.display = 'block';
-        const uploadedFiles = files[subject];
-        if (uploadedFiles.length > 0) {
-            uploadedFiles.forEach(file => {
-                const div = document.createElement('div');
-                div.textContent = file;
-                fileList.appendChild(div);
-            });
-        } else {
-            fileList.textContent = 'No files uploaded for this subject.';
-        }
+    // Clear previous PDF links
+    pdfLinks.innerHTML = "";
+
+    // Define the materials for each subject
+    const materials = {
+        chemistry: [
+            { name: "Electro Chemistry", url: "https://drive.google.com/file/d/1DAKk7NYe9J_27taHdLVyfUHI4UZpVkhG/preview" },
+            { name: "Phase rule & Phase diagram of Mono-component System", url: "https://drive.google.com/file/d/1m4umyQ3ukgPg87k7kTml4T04yqZHwbeO/preview" },
+            { name: "Reaction Kinetics", url: "https://drive.google.com/file/d/1Mwi5mLr0hpDthPIhvv9NCOA97sritjqO/preview" },
+        ],
+        /*cse: [
+            { name: "Object Oriented Programming", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_2/preview" },
+            { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_3/preview" },
+        ],*/
+        discrete: [
+            { name: "Sum Product Pigeon Principle (6) ", url: "https://drive.google.com/file/d/1g2yvpnt8fHdFzbT1CMHP3UZrEfrgSi5I/preview" },
+            { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/1CxrychbeRpxgzjBsGS3jNaz7Rz4UUs0d/preview" },
+        ],
+        /*math: [
+            { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
+            { name: "Calculus", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_7/preview" },
+        ],
+        eee: [
+            { name: "Circuit Analysis", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_8/preview" },
+            { name: "Power Systems", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_9/preview" },
+        ]*/
+    };
+
+    // Check if the selected subject has materials
+    if (materials[selectedSubject]) {
+        courseMaterialSection.style.display = 'block';
+
+        // Loop through the materials and create links
+        materials[selectedSubject].forEach(material => {
+            const listItem = document.createElement('li');
+            const link = document.createElement('a');
+            link.href = "#"; // Prevents default link navigation
+            link.textContent = material.name;
+            link.onclick = function() {
+                showPDF(material.url);  // Show PDF on click
+                return false;  // Prevents page refresh
+            };
+            listItem.appendChild(link);
+            pdfLinks.appendChild(listItem);
+        });
     } else {
-        document.getElementById('file-section').style.display = 'none';
+        courseMaterialSection.style.display = 'none';
     }
 }
 
-// Simulate file upload (visible only to admins)
-function uploadFile() {
-    const subject = document.getElementById('subject-select').value;
-    const fileName = prompt('Enter file name:'); // Simulate file name input
+// Function to show PDF and hide other sections
+function showPDF(pdfUrl) {
+    const pdfViewer = document.getElementById('pdf-viewer');
+    const pdfViewerSection = document.getElementById('pdf-viewer-section');
+    const routineSection = document.getElementById('routine');
+    const classTestSection = document.getElementById('class-test');
+    const headerSection = document.querySelector('header');
 
-    if (fileName && subject) {
-        files[subject].push(fileName);
-        showFiles(); // Update file list
-    } else {
-        alert('Please select a subject and enter a file name.');
-    }
+    // Set the PDF source
+    pdfViewer.src = pdfUrl;
+    
+    // Show the PDF viewer
+    pdfViewerSection.style.display = 'block';
+
+    // Hide other sections
+    routineSection.style.display = 'none';
+    classTestSection.style.display = 'none';
 }
 
+// Combined window.onload to avoid conflicts
+window.onload = function() {
+    showDay('sunday');
+    startCountdown();
+};

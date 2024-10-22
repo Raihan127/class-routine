@@ -38,7 +38,11 @@ nav ul li a {
     text-decoration: none;
     cursor: pointer;
 }
-
+nav ul li a:hover {
+    text-decoration: none;
+     color: gold;
+    
+}
 
 /* Class Test Countdown */
 .class-test {
@@ -109,20 +113,5 @@ footer {
     border-radius: 4px;
     width: 100%;
 }
-/* Additional Styles for File Upload Section */
-#file-section {
-    background-color: white;
-    margin: 20px 0;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-#file-list {
-    margin-top: 10px;
-}
-
-#file-list div {
-    margin-bottom: 5px;
-}
 
