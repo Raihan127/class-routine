@@ -2,13 +2,15 @@
 function startCountdown() {
     // Test Dates
     const testDates = {
-        math: new Date("November 25, 2024 01:30:00").getTime(),  // Change CT dates here
-        discrete: new Date("November 20, 2024 00:00:00").getTime(),
-        chemistry: new Date("November 15, 2024 00:00:00").getTime()
+      eee: new Date("October 31, 2024 15:00:00").getTime(), 
+       // math: new Date("November 25, 2024 01:30:00").getTime(),  // Change CT dates here, 24 hours
+      //  discrete: new Date("November 20, 2024 00:00:00").getTime(),
+      //  chemistry: new Date("November 15, 2024 00:00:00").getTime()
     };
 
     // Update countdown every second
     setInterval(function() {
+      updateCountdown('eee', testDates.eee);
         updateCountdown('math', testDates.math);
         updateCountdown('discrete', testDates.discrete);
         updateCountdown('chemistry', testDates.chemistry);
@@ -73,22 +75,26 @@ function showCourseMaterial() {
             { name: "Phase rule & Phase diagram of Mono-component System", url: "https://drive.google.com/file/d/1m4umyQ3ukgPg87k7kTml4T04yqZHwbeO/preview" },
             { name: "Reaction Kinetics", url: "https://drive.google.com/file/d/1Mwi5mLr0hpDthPIhvv9NCOA97sritjqO/preview" },
         ],
-        /*cse: [
-            { name: "Object Oriented Programming", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_2/preview" },
-            { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_3/preview" },
-        ],*/
+        cse: [
+            { name: "Inheritance", url: "https://drive.google.com/file/d/1mn-YluH0So18ec4v4eNzNclpV9TCT4Ai/preview" },
+            { name: "Operator Overloading", url: "https://drive.google.com/file/d/1XqFJUDoAlfhDtn3KAuCv7zk5m2ncs5Ns/preview" },
+            { name: "Lecture 11", url: "https://drive.google.com/file/d/1xnExKQjS5bZx-4HZi2cP7IoA3lqBWVOs/preview" },
+            { name: "Polymorphism", url: "https://drive.google.com/file/d/1UB7z4li0AJ1nF2Re5W3DA5dfHeV6kPRh/preview" },
+            { name: "Exception Handling", url: "https://drive.google.com/file/d/1Il9LkXW942Ygu8G3jzFgAstSnGVveBuc/preview" },
+        ],
+        
         discrete: [
             { name: "Sum Product Pigeon Principle (6) ", url: "https://drive.google.com/file/d/1g2yvpnt8fHdFzbT1CMHP3UZrEfrgSi5I/preview" },
             { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/1CxrychbeRpxgzjBsGS3jNaz7Rz4UUs0d/preview" },
+             { name: "Graph(8)", url: "https://drive.google.com/file/d/1CK_rwhi5swxOZ7S80_e2zy-gpEMSH_XO/preview" },
         ],
         /*math: [
             { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
             { name: "Calculus", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_7/preview" },
-        ],
+        ],*/
         eee: [
-            { name: "Circuit Analysis", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_8/preview" },
-            { name: "Power Systems", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_9/preview" },
-        ]*/
+            { name: "Bipolar Junction Transistor", url: "https://drive.google.com/file/d/1W15iygwbnCjmW1_68zlrx7eEODSBTOyG/preview" },
+        ],
     };
 
     // Check if the selected subject has materials

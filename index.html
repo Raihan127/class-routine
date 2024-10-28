@@ -8,31 +8,31 @@
 </head>
 <body>
     <header>
-        <h1>Class Routine</h1>
-        <h3>Section-D</h3>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showDay('sunday')">Sunday</a></li>
-                <li><a href="#" onclick="showDay('monday')">Monday</a></li>
-                <li><a href="#" onclick="showDay('tuesday')">Tuesday</a></li>
-                <li><a href="#" onclick="showDay('wednesday')">Wednesday</a></li>
-                <li><a href="#" onclick="showDay('thursday')">Thursday</a></li>
-                <li><a href="#" onclick="showDay('class-test')">Class Test</a></li>
-            </ul>
-        </nav>
-       <div>
-    <label for="subject-select">Course Materials:</label>
-    <select id="subject-select" onchange="showCourseMaterial()">
-        <option value="">--Choose a Subject--</option>
-        <option value="cse">CSE-OOP</option>
-        <option value="discrete">DISCRETE MATH</option>
-        <option value="math">MATH</option>
-        <option value="eee">EEE</option>
-        <option value="chemistry">CHEMISTRY</option>
-    </select>
-</div>
+    <h1>Class Routine</h1>
+    <h3>Section-D</h3>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showDay('sunday')">Sunday</a></li>
+            <li><a href="#" onclick="showDay('monday')">Monday</a></li>
+            <li><a href="#" onclick="showDay('tuesday')">Tuesday</a></li>
+            <li><a href="#" onclick="showDay('wednesday')">Wednesday</a></li>
+            <li><a href="#" onclick="showDay('thursday')">Thursday</a></li>
+            <li><a href="#" onclick="showDay('class-test')">Class Test</a></li>
+        </ul>
+    </nav>
+    <div>
+        <label for="subject-select">Course Materials:</label>
+        <select id="subject-select" onchange="showCourseMaterial()">
+            <option value="">--Choose a Subject--</option>
+            <option value="cse">CSE-OOP</option>
+            <option value="discrete">DISCRETE MATH</option>
+            <option value="chemistry">CHEMISTRY</option>
+            <option value="eee">EEE</option>
+            <option value="math">MATH</option>
+        </select>
+    </div>
+</header>
 
-    </header>
 <!-- PDF Links Display Section -->
 <section id="course-material-section" style="display: none;">
     <ul id="pdf-links"></ul> <!-- This list will be dynamically filled with PDF links -->
@@ -94,7 +94,7 @@
                     <td>10:30 AM - 12:00 PM</td>
                     <td>DISCRETE MATH</td>
                     <td>JF</td>
-                    <td>Senate</td>
+                    <td>NR2</td>
                 </tr>
                 <tr>   
                     <td>1:30 PM - 3:00 PM</td>
@@ -152,7 +152,7 @@
                 </tr>
                 <tr>   
                     <td>12:30 PM - 1:30 PM</td>
-                    <td>CHEMISRTY</td>
+                    <td>CHEMISTRY</td>
                     <td>SP</td>
                     <td>314</td>
                 </tr>
@@ -195,7 +195,13 @@
         <div id="class-test" class="day" style="display:none;">
             <div class="class-test">
               
-                <div id="test-math">
+                <div id="test-eee">
+                    <p>EEE CT Date: <strong id="eee-date">3:00 PM, October 31, 2024</strong></p>
+                    <p>Time Remaining: <strong id="eee-remaining"></strong></p>
+                    <p>Exam Topic: <strong id="eee-topic">Bipolar Junction Transister(BJT)</strong></p>
+                </div>
+                
+               <!-- <div id="test-math">
                     <p>Mathematics CT Date: <strong id="math-date">1:30 PM, November 25, 2024(Demo)</strong></p>
                     <p>Time Remaining: <strong id="math-remaining"></strong></p>
                     <p>Exam Topic: <strong id="math-topic">Time & Exam topic not Fixed! </strong></p>
@@ -209,7 +215,7 @@
                     <p>Chemistry CT Date: <strong id="chemistry-date">November 15, 2024</strong></p>
                     <p>Time Remaining: <strong id="chemistry-remaining"></strong></p>
                      <p>Exam Topic: <strong id="chemistry-topic">Time & Exam topic not Fixed!</strong></p>
-                </div>
+                </div>-->
             </div>
         </div>
 
