@@ -86,7 +86,8 @@ function showCourseMaterial() {
         discrete: [
             { name: "Sum Product Pigeon Principle (6) ", url: "https://drive.google.com/file/d/1g2yvpnt8fHdFzbT1CMHP3UZrEfrgSi5I/preview" },
             { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/1CxrychbeRpxgzjBsGS3jNaz7Rz4UUs0d/preview" },
-             { name: "Graph(8)", url: "https://drive.google.com/file/d/1CK_rwhi5swxOZ7S80_e2zy-gpEMSH_XO/preview" },
+             { name: "Graph (8)", url: "https://drive.google.com/file/d/1CK_rwhi5swxOZ7S80_e2zy-gpEMSH_XO/preview" },
+             { name: "Relation (9)", url: "https://drive.google.com/file/d/1wZb_-ji61K-G9BKAfPFO9-8mu5xG-6bD/preview" },
         ],
         /*math: [
             { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
