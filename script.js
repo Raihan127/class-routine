@@ -2,8 +2,8 @@
 function startCountdown() {
     // Test Dates
     const testDates = {
-    //  eee: new Date("October 31, 2024 15:00:00").getTime(), 
-         math: new Date("November 13, 2024 09:00:00").getTime(),  // Change CT dates here, 24 hours
+      eee: new Date("November 13, 2024 09:00:00").getTime(), 
+      //   math: new Date("November 13, 2024 09:00:00").getTime(),  // Change CT dates here, 24 hours
       //  discrete: new Date("November 20, 2024 00:00:00").getTime(),
       //  chemistry: new Date("November 15, 2024 00:00:00").getTime()
     };
