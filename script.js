@@ -2,8 +2,8 @@
 function startCountdown() {
     // Test Dates
     const testDates = {
-      eee: new Date("October 31, 2024 15:00:00").getTime(), 
-        // math: new Date("November 25, 2024 01:30:00").getTime(),  // Change CT dates here, 24 hours
+    //  eee: new Date("October 31, 2024 15:00:00").getTime(), 
+         math: new Date("November 13, 2024 09:00:00").getTime(),  // Change CT dates here, 24 hours
       //  discrete: new Date("November 20, 2024 00:00:00").getTime(),
       //  chemistry: new Date("November 15, 2024 00:00:00").getTime()
     };
@@ -95,6 +95,7 @@ function showCourseMaterial() {
         ],*/
         eee: [
             { name: "Bipolar Junction Transistor", url: "https://drive.google.com/file/d/1W15iygwbnCjmW1_68zlrx7eEODSBTOyG/preview" },
+            { name: "Field Effect Transistor", url: "https://drive.google.com/file/d/1WEkUwPGDsT9yrPEG0QFFhs0hwj3d62N8/preview" },
         ],
     };
 
