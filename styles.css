@@ -87,7 +87,7 @@ nav ul li a:hover {
 
 .class-test div {
     margin: 0px 0;
-    padding: 0.5px;
+    padding: 0.3px;
     border-radius: 5px;
 }
 
@@ -104,44 +104,6 @@ nav ul li a:hover {
     margin: 20px auto;
     border-radius: 5px;
 }
-
-/* Class Test Countdown 
-.class-test {
-    margin-top: 0px;
-    font-size: 22px;
-    text-align: center;
-    background-color: white;
-}
-
-#test-math {
-    color: #A52A2A; 
-    margin-bottom: 40px;
-}
-
-#test-eee {
-    color: #4B0082; 
-    margin-bottom: 40px;
-}
-
-
-#test-discrete {
-    color: #483D8B;
-    margin-bottom: 40px;
-}
-
-#test-cse {
-    color: #19832a;
-    margin-bottom: 40px;
-}
-
-#test-chemistry {
-    color: #1E90FF; 
-    margin-bottom: 40px;
-}
-
-.class-test div {
-    margin: 0px 0; 
-} */
 
 section#routine {
     padding: 10px;
