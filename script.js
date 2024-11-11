@@ -3,9 +3,10 @@ function startCountdown() {
     // Test Dates
     const testDates = {
       eee: new Date("November 13, 2024 09:00:00").getTime(), 
-      //   math: new Date("November 13, 2024 09:00:00").getTime(),  // Change CT dates here, 24 hours
-      //  discrete: new Date("November 20, 2024 00:00:00").getTime(),
-       // chemistry: new Date("November 13, 2024 00:00:00").getTime()
+        math: new Date("November 21, 2024 15:00:00").getTime(),  // Change CT dates here, 24 hours
+         discrete: new Date("November 18, 2024 10:30:00").getTime(),
+          cse: new Date("November 17, 2024 12:00:00").getTime(),
+           chemistry: new Date("November 18, 2024 09:00:00").getTime()
     };
 
     // Update countdown every second
@@ -13,6 +14,7 @@ function startCountdown() {
       updateCountdown('eee', testDates.eee);
         updateCountdown('math', testDates.math);
         updateCountdown('discrete', testDates.discrete);
+        updateCountdown('cse', testDates.cse);
         updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
@@ -88,6 +90,9 @@ function showCourseMaterial() {
             { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/1CxrychbeRpxgzjBsGS3jNaz7Rz4UUs0d/preview" },
              { name: "Graph (8)", url: "https://drive.google.com/file/d/1CK_rwhi5swxOZ7S80_e2zy-gpEMSH_XO/preview" },
              { name: "Relation (9)", url: "https://drive.google.com/file/d/1wZb_-ji61K-G9BKAfPFO9-8mu5xG-6bD/preview" },
+             { name: "Graphs (10)", url: "https://drive.google.com/file/d/1cLMLVorhJRvIU7QZCJLcwZmf5CnuvjXm/preview" },
+             { name: "Path & Connectivity (11)", url: "https://drive.google.com/file/d/1MYeJdsDA04TOIE6VEXuny19fdxg3JZ1a/preview" },
+             { name: "Euler Path & Circuit Hamilton Path and Circuit Tree (12)", url: "https://drive.google.com/file/d/1eZLnLrR6xS0SalztC2GvW3bh-hMjFkgs/preview" },
         ],
         /*math: [
             { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
