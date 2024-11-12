@@ -2,7 +2,7 @@
 function startCountdown() {
     // Test Dates
     const testDates = {
-      eee: new Date("November 13, 2024 09:00:00").getTime(), 
+     // eee: new Date("November 13, 2024 09:00:00").getTime(), 
         math: new Date("November 21, 2024 15:00:00").getTime(),  // Change CT dates here, 24 hours
          discrete: new Date("November 18, 2024 10:30:00").getTime(),
           cse: new Date("November 17, 2024 12:00:00").getTime(),
