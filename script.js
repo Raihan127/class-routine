@@ -11,7 +11,7 @@ function startCountdown() {
 
     // Update countdown every second
     setInterval(function() {
-      updateCountdown('eee', testDates.eee);
+        updateCountdown('eee', testDates.eee);
         updateCountdown('math', testDates.math);
         updateCountdown('discrete', testDates.discrete);
         updateCountdown('cse', testDates.cse);
