@@ -3,19 +3,19 @@ function startCountdown() {
     // Test Dates
     const testDates = {
       eee: new Date("November 27, 2024 13:30:00").getTime(), 
-        math: new Date("November 25, 2024 10:30:00").getTime(),  // Change CT dates here, 24 hours
-         discrete: new Date("November 26, 2024 16:30:00").getTime(),
-        //  cse: new Date("November 24, 2024 12:00:00").getTime(),
-           chemistry: new Date("November 26, 2024 13:30:00").getTime()
+      //  math: new Date("November 25, 2024 10:30:00").getTime(),  // Change CT dates here, 24 hours
+        // discrete: new Date("November 26, 2024 16:30:00").getTime(),
+          cse: new Date("December 03, 2024 09:00:00").getTime(),
+         //  chemistry: new Date("November 26, 2024 13:30:00").getTime()
     };
 
     // Update countdown every second
     setInterval(function() {
         updateCountdown('eee', testDates.eee);
-        updateCountdown('math', testDates.math);
-        updateCountdown('discrete', testDates.discrete);
-      //  updateCountdown('cse', testDates.cse);
-        updateCountdown('chemistry', testDates.chemistry);
+      //  updateCountdown('math', testDates.math);
+       // updateCountdown('discrete', testDates.discrete);
+        updateCountdown('cse', testDates.cse);
+      //  updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
 
