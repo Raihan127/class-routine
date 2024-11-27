@@ -8,7 +8,7 @@ body {
 header {
      background-color:#4682B4;
     color: silver;
-    padding: 15px;
+    padding: 13px;
     border-radius: 8px;
     text-align: center;
 }
@@ -116,8 +116,14 @@ button {
     transition: transform 0.3s;
 }
 
+#test-oopcse {
+    color: #690e1a;
+    margin-bottom: 40px;
+    transition: transform 0.3s;
+}
+
 #test-chemistry {
-    color: #1E90FF; 
+    color: #7c1250; 
     margin-bottom: 40px;
     transition: transform 0.3s;
 }
