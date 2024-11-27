@@ -35,7 +35,7 @@ function updateCountdown(subject, testDate) {
         document.getElementById(`${subject}-remaining`).textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
     } else {
         // If the date has passed
-        document.getElementById(`${subject}-remaining`).textContent = "CT Completed!";
+        document.getElementById(`${subject}-remaining`).textContent = "Exam Completed!";
     }
 }
 
