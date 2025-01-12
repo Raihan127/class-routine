@@ -9,17 +9,13 @@ header {
      background-color:#4682B4;
     color: silver;
     padding: 13px;
-    border-radius: 8px;
+    border-radius: 10px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
-}
-
-header h3 {
-   margin: 1;
-   color: white;
+    font-size: 25px;  
 }
 
 nav ul {
