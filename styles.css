@@ -1,12 +1,13 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #cfd9df, #e2ebf0);
     margin: 0;
     padding: 0;
-    background-color: #B0E0E6;
 }
 
 header {
-     background-color:#4682B4;
+    /* background-color:#4682B4; */
+      background: linear-gradient(135deg, #191970, #6A5ACD, #191970, #6A5ACD, #191970);
     color: silver;
     padding: 13px;
     border-radius: 10px;
@@ -15,7 +16,6 @@ header {
 
 header h1 {
     margin: 0;
-    font-size: 25px;  
 }
 
 nav ul {
@@ -44,7 +44,7 @@ button {
     font-family: 'Poppins', sans-serif;
     padding: 5px 10px;
     margin: 5px;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: 500;
     cursor: pointer;
     border: none;
@@ -65,15 +65,15 @@ button {
 }
 
 .test-button {
-    background: linear-gradient(45deg, #483D8B, #7B68EE); 
+    background: linear-gradient(45deg, #DDA0DD, #DB7093); 
     color: white;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5); 
+    box-shadow: 0 4px 6px rgba(252, 81, 215, 0.507); 
 }
 
 .test-button:hover {
-    background: linear-gradient(45deg, #4B0082, #483D8B); 
+    background: linear-gradient(45deg, #35062b, #2d043a); 
     transform: translateY(-4px); 
-    box-shadow: 0 6px 12px rgba(11, 2, 61, 0.5); 
+    box-shadow: 0 6px 12px rgba(26, 1, 43, 0.5); 
 }
 
 
@@ -159,6 +159,8 @@ section#routine {
 table {
     width: 100%;
     border-collapse: collapse;
+    height: 200px;
+    margin: 10px 0;
 }
 
 table, th, td {
@@ -168,6 +170,7 @@ table, th, td {
 th, td {
     padding: 11px;
     text-align: center;
+    border: 2px solid #ddd;
 }
 
 th {
@@ -178,13 +181,8 @@ tr:hover {
 }
 footer {
     text-align: center;
-    padding: 0px;
-    background-color: #708090;
-    color: white;
-    position: fixed;
-    bottom: 0;
-    border-radius: 8px;
-    width: 100%;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #888;
 }
-
 
