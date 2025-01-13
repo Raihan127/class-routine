@@ -4,9 +4,9 @@ function startCountdown() {
     const testDates = {
       eee: new Date("December 24, 2024 09:30:00").getTime(), 
     //    math: new Date("December 15, 2024 09:30:00").getTime(),  // Change CT dates here, 24 hours
-         discrete: new Date("December 19, 2024 09:30:00").getTime(),
+      //   discrete: new Date("December 19, 2024 09:30:00").getTime(),
         //  cse: new Date("December 03, 2024 09:00:00").getTime(),
-           oopcse: new Date("December 22, 2024 09:30:00").getTime(),
+        //   oopcse: new Date("December 22, 2024 09:30:00").getTime(),
         //    chemistry: new Date("December 17, 2024 09:30:00").getTime()
     };
 
@@ -14,9 +14,9 @@ function startCountdown() {
     setInterval(function() {
         updateCountdown('eee', testDates.eee);
      //   updateCountdown('math', testDates.math);
-        updateCountdown('discrete', testDates.discrete);
+     //   updateCountdown('discrete', testDates.discrete);
      //   updateCountdown('cse', testDates.cse);
-        updateCountdown('oopcse', testDates.oopcse);
+     //   updateCountdown('oopcse', testDates.oopcse);
       //  updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
@@ -74,7 +74,7 @@ function showCourseMaterial() {
 
     // Define the materials for each subject
     const materials = {
-        chemistry: [
+      /*  chemistry: [
             { name: "Electro Chemistry", url: "https://drive.google.com/file/d/1DAKk7NYe9J_27taHdLVyfUHI4UZpVkhG/preview" },
             { name: "Phase rule & Phase diagram of Mono-component System", url: "https://drive.google.com/file/d/1m4umyQ3ukgPg87k7kTml4T04yqZHwbeO/preview" },
             { name: "Reaction Kinetics", url: "https://drive.google.com/file/d/1Mwi5mLr0hpDthPIhvv9NCOA97sritjqO/preview" },
@@ -96,14 +96,14 @@ function showCourseMaterial() {
              { name: "Path & Connectivity (11)", url: "https://drive.google.com/file/d/1MYeJdsDA04TOIE6VEXuny19fdxg3JZ1a/preview" },
              { name: "Euler Path & Circuit Hamilton Path and Circuit Tree (12)", url: "https://drive.google.com/file/d/1eZLnLrR6xS0SalztC2GvW3bh-hMjFkgs/preview" },
         ],
-        /*math: [
+         math: [
             { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
             { name: "Calculus", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_7/preview" },
-        ],*/
+        ],
         eee: [
             { name: "Bipolar Junction Transistor", url: "https://drive.google.com/file/d/1W15iygwbnCjmW1_68zlrx7eEODSBTOyG/preview" },
             { name: "Field Effect Transistor", url: "https://drive.google.com/file/d/1WEkUwPGDsT9yrPEG0QFFhs0hwj3d62N8/preview" },
-        ],
+        ], */
     };
 
     // Check if the selected subject has materials
