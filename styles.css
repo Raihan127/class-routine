@@ -65,15 +65,15 @@ button {
 }
 
 .test-button {
-    background:  #4682B4; 
+    background:  #0c7899; 
     color: white;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.5); 
+    box-shadow: 0 4px 6px rgba(4, 58, 83, 0.5); 
     }
 
   .test-button:hover {
-  background: linear-gradient(45deg, #4169E1,  #191970); 
+  background: linear-gradient(45deg, #4169E1,  #061c4d); 
   transform: translateY(-4px); 
-  box-shadow: 0 6px 12px rgba(11, 2, 61, 0.5); 
+  box-shadow: 0 6px 12px rgba(3, 44, 82, 0.5); 
 }
 
 .result-button {

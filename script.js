@@ -99,11 +99,11 @@ function showCourseMaterial() {
          math: [
             { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
             { name: "Calculus", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_7/preview" },
-        ],
-        eee: [
-            { name: "Bipolar Junction Transistor", url: "https://drive.google.com/file/d/1W15iygwbnCjmW1_68zlrx7eEODSBTOyG/preview" },
-            { name: "Field Effect Transistor", url: "https://drive.google.com/file/d/1WEkUwPGDsT9yrPEG0QFFhs0hwj3d62N8/preview" },
         ], */
+        eee: [
+            { name: "বাংলাদেশ নামকরন", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+            { name: "India Independence Act 1947", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+        ], 
     };
 
     // Check if the selected subject has materials
