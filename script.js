@@ -2,7 +2,7 @@
 function startCountdown() {
     // Test Dates
     const testDates = {
-      eee: new Date("December 24, 2024 09:30:00").getTime(), 
+      eee: new Date("March 24, 2025 10:30:00").getTime(), 
     //    math: new Date("December 15, 2024 09:30:00").getTime(),  // Change CT dates here, 24 hours
       //   discrete: new Date("December 19, 2024 09:30:00").getTime(),
         //  cse: new Date("December 03, 2024 09:00:00").getTime(),
@@ -72,56 +72,59 @@ function showCourseMaterial() {
     // Clear previous PDF links
     pdfLinks.innerHTML = "";
 
-    // Define the materials for each subject
     const materials = {
-      /*  chemistry: [
-            { name: "Electro Chemistry", url: "https://drive.google.com/file/d/1DAKk7NYe9J_27taHdLVyfUHI4UZpVkhG/preview" },
-            { name: "Phase rule & Phase diagram of Mono-component System", url: "https://drive.google.com/file/d/1m4umyQ3ukgPg87k7kTml4T04yqZHwbeO/preview" },
-            { name: "Reaction Kinetics", url: "https://drive.google.com/file/d/1Mwi5mLr0hpDthPIhvv9NCOA97sritjqO/preview" },
-        ],
-        cse: [
-            { name: "Inheritance", url: "https://drive.google.com/file/d/1mn-YluH0So18ec4v4eNzNclpV9TCT4Ai/preview" },
-            { name: "Operator Overloading", url: "https://drive.google.com/file/d/1XqFJUDoAlfhDtn3KAuCv7zk5m2ncs5Ns/preview" },
-            { name: "Lecture 11", url: "https://drive.google.com/file/d/1xnExKQjS5bZx-4HZi2cP7IoA3lqBWVOs/preview" },
-            { name: "Polymorphism", url: "https://drive.google.com/file/d/1UB7z4li0AJ1nF2Re5W3DA5dfHeV6kPRh/preview" },
-            { name: "Exception Handling", url: "https://drive.google.com/file/d/1Il9LkXW942Ygu8G3jzFgAstSnGVveBuc/preview" },
-        ],
-        
-        discrete: [
-            { name: "Sum Product Pigeon Principle (6) ", url: "https://drive.google.com/file/d/1g2yvpnt8fHdFzbT1CMHP3UZrEfrgSi5I/preview" },
-            { name: "Permutation Combination (7)", url: "https://drive.google.com/file/d/1CxrychbeRpxgzjBsGS3jNaz7Rz4UUs0d/preview" },
-             { name: "Graph (8)", url: "https://drive.google.com/file/d/1CK_rwhi5swxOZ7S80_e2zy-gpEMSH_XO/preview" },
-             { name: "Relation (9)", url: "https://drive.google.com/file/d/1wZb_-ji61K-G9BKAfPFO9-8mu5xG-6bD/preview" },
-             { name: "Graphs (10)", url: "https://drive.google.com/file/d/1cLMLVorhJRvIU7QZCJLcwZmf5CnuvjXm/preview" },
-             { name: "Path & Connectivity (11)", url: "https://drive.google.com/file/d/1MYeJdsDA04TOIE6VEXuny19fdxg3JZ1a/preview" },
-             { name: "Euler Path & Circuit Hamilton Path and Circuit Tree (12)", url: "https://drive.google.com/file/d/1eZLnLrR6xS0SalztC2GvW3bh-hMjFkgs/preview" },
-        ],
-         math: [
-            { name: "Linear Algebra", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_6/preview" },
-            { name: "Calculus", url: "https://drive.google.com/file/d/YOUR_OTHER_FILE_ID_7/preview" },
-        ], */
-        eee: [
-            { name: "বাংলাদেশ নামকরন", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
-            { name: "India Independence Act 1947", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
-        ], 
+        eee: {
+            color: "#4CAF50", 
+            items: [
+                { name: "বাংলাদেশ নামকরন", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+                { name: "India Independence Act 1947", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+            ],
+        },
+      //  cse: {
+        //    color: "#2196F3", 
+         //   items: [
+        //        { name: "Object-Oriented Design", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+         //       { name: "Software Engineering Basics", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+         //   ],
+       // },
+      //  discrete: {
+       //     color: "#483D8B", 
+       //     items: [
+       //         { name: "Discrete Mathematics Overview", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+        //        { name: "Algorithms in Discrete Structures", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+       //     ],
+      //  },
+     //   chemistry: {
+     //       color: "#9C27B0", 
+      //      items: [
+      //          { name: "Basic Chemistry", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+     //           { name: "Chemical Reactions", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+     //       ],
+     //   },
+     //   math: {
+     //       color: "#191970", 
+     //       items: [
+      //          { name: "Calculus Fundamentals", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+      //          { name: "Linear Algebra", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+       //     ],
+     //   },
     };
 
     // Check if the selected subject has materials
     if (materials[selectedSubject]) {
         courseMaterialSection.style.display = 'block';
 
-        // Loop through the materials and create links
-        materials[selectedSubject].forEach(material => {
-            const listItem = document.createElement('li');
-            const link = document.createElement('a');
-            link.href = "#"; // Prevents default link navigation
-            link.textContent = material.name;
-            link.onclick = function() {
+        // Loop through the materials and create buttons
+        materials[selectedSubject].items.forEach(material => {
+            const button = document.createElement('button');
+            button.textContent = material.name;
+            button.classList.add('material-button'); // Add class for styling
+            button.style.backgroundColor = materials[selectedSubject].color; // Set the background color
+            button.onclick = function() {
                 showPDF(material.url);  // Show PDF on click
                 return false;  // Prevents page refresh
             };
-            listItem.appendChild(link);
-            pdfLinks.appendChild(listItem);
+            pdfLinks.appendChild(button);
         });
     } else {
         courseMaterialSection.style.display = 'none';
