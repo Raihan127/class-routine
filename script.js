@@ -2,20 +2,20 @@
 function startCountdown() {
     // Test Dates
     const testDates = {
-      eee: new Date("March 24, 2025 10:30:00").getTime(), 
+    //  eee: new Date("March 24, 2025 10:30:00").getTime(), 
     //    math: new Date("December 15, 2024 09:30:00").getTime(),  // Change CT dates here, 24 hours
       //   discrete: new Date("December 19, 2024 09:30:00").getTime(),
-        //  cse: new Date("December 03, 2024 09:00:00").getTime(),
+          cse: new Date("January 27, 2025 09:00:00").getTime(),
         //   oopcse: new Date("December 22, 2024 09:30:00").getTime(),
         //    chemistry: new Date("December 17, 2024 09:30:00").getTime()
     };
 
     // Update countdown every second
     setInterval(function() {
-        updateCountdown('eee', testDates.eee);
+      //  updateCountdown('eee', testDates.eee);
      //   updateCountdown('math', testDates.math);
      //   updateCountdown('discrete', testDates.discrete);
-     //   updateCountdown('cse', testDates.cse);
+        updateCountdown('cse', testDates.cse);
      //   updateCountdown('oopcse', testDates.oopcse);
       //  updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
@@ -80,13 +80,13 @@ function showCourseMaterial() {
                 { name: "India Independence Act 1947", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
             ],
         },
-      //  cse: {
-        //    color: "#2196F3", 
-         //   items: [
-        //        { name: "Object-Oriented Design", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+        cse: {
+            color: "#2196F3", 
+            items: [
+                { name: "Introduction to Java", url: "https://drive.google.com/file/d/1kWNco3EJtgt9Yb-idpdhDNNrR8m4t_ty/preview" },
          //       { name: "Software Engineering Basics", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
-         //   ],
-       // },
+            ],
+        },
       //  discrete: {
        //     color: "#483D8B", 
        //     items: [
