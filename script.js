@@ -87,7 +87,7 @@ function showCourseMaterial() {
             color: "#2196F3", 
             items: [
                 { name: "Introduction to Java", url: "https://drive.google.com/file/d/1kWNco3EJtgt9Yb-idpdhDNNrR8m4t_ty/preview" },
-         //       { name: "Software Engineering Basics", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+         //       { name: "Software ", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
             ],
         },
         discrete: {
@@ -97,7 +97,7 @@ function showCourseMaterial() {
         //        { name: "Algorithms in Discrete Structures", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
            ],
         },
-        
+
      //   chemistry: {
      //       color: "#9C27B0", 
       //      items: [
