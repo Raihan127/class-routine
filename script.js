@@ -78,6 +78,9 @@ function showCourseMaterial() {
             items: [
                 { name: "বাংলাদেশ নামকরন", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
                 { name: "India Independence Act 1947", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
+                { name: "১৯৫৬ সালের সংবিধান", url: "https://drive.google.com/file/d/1Hd0SapPcS9FaABYHZrpa1Jyy1Q-wwdM7/preview" },
+                { name: "ভাষা আন্দোলন", url: "https://drive.google.com/file/d/1vEGaVD6lmnIeneP8vSSfi5VmZLoiYviy/preview" },
+                { name: "যুক্তফ্রন্ট", url: "https://drive.google.com/file/d/1ncRpDP8mUtMbWsegEzqnVC7o60Kk7A5d/preview" },
             ],
         },
         cse: {
@@ -87,13 +90,14 @@ function showCourseMaterial() {
          //       { name: "Software Engineering Basics", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
             ],
         },
-      //  discrete: {
-       //     color: "#483D8B", 
-       //     items: [
-       //         { name: "Discrete Mathematics Overview", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
+        discrete: {
+           color: "#483D8B", 
+           items: [
+                { name: "Introduction", url: "https://drive.google.com/file/d/1sR1iuP5qs-TsuzzYqkJtWPyKh5-z6EU4/preview" },
         //        { name: "Algorithms in Discrete Structures", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
-       //     ],
-      //  },
+           ],
+        },
+        
      //   chemistry: {
      //       color: "#9C27B0", 
       //      items: [
