@@ -1,4 +1,4 @@
-// Function to start countdown for all class tests
+
 function startCountdown() {
     // Test Dates
     const testDates = {
