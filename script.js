@@ -7,7 +7,7 @@ function startCountdown() {
          discrete: new Date("March 03, 2025 10:30:00").getTime(),
           cse: new Date("February 19, 2025 12:00:00").getTime(),
           oopcse: new Date("March 11, 2025 09:30:00").getTime(),
-        //    chemistry: new Date("December 17, 2025 09:30:00").getTime()
+           chemistry: new Date("February 23, 2025 12:00:00").getTime()
     };
 
     // Update countdown every second
@@ -16,8 +16,8 @@ function startCountdown() {
         updateCountdown('math', testDates.math);
         updateCountdown('discrete', testDates.discrete);
         updateCountdown('cse', testDates.cse);
-       updateCountdown('oopcse', testDates.oopcse);
-      //  updateCountdown('chemistry', testDates.chemistry);
+        updateCountdown('oopcse', testDates.oopcse);
+        updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
 
