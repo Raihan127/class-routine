@@ -150,7 +150,7 @@ button {
 }
 
 #test-chemistry {
-    color: #05f8c3; 
+    color: hsl(66, 87%, 41%); 
     margin-bottom: 40px;
     transition: transform 0.3s;
 }
