@@ -3,11 +3,11 @@ function startCountdown() {
     // Test Dates
     const testDates = {
     //  eee: new Date("March 24, 2025 10:30:00").getTime(), 
-        math: new Date("February 20, 2025 10:30:00").getTime(),  // Change CT dates here, 24 hours
+        math: new Date("March 02, 2025 15:00:00").getTime(),  // Change CT dates here, 24 hours
          discrete: new Date("March 03, 2025 10:30:00").getTime(),
-          cse: new Date("February 19, 2025 12:00:00").getTime(),
+          cse: new Date("March 04, 2025 13:30:00").getTime(),
           oopcse: new Date("March 11, 2025 09:30:00").getTime(),
-           chemistry: new Date("February 23, 2025 12:00:00").getTime()
+       //    chemistry: new Date("February 23, 2025 12:00:00").getTime()
     };
 
     // Update countdown every second
@@ -17,7 +17,7 @@ function startCountdown() {
         updateCountdown('discrete', testDates.discrete);
         updateCountdown('cse', testDates.cse);
         updateCountdown('oopcse', testDates.oopcse);
-        updateCountdown('chemistry', testDates.chemistry);
+     //   updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
 
