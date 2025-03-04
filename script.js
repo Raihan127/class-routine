@@ -15,7 +15,7 @@ function startCountdown() {
       //  updateCountdown('eee', testDates.eee);
       //  updateCountdown('math', testDates.math);
        // updateCountdown('discrete', testDates.discrete);
-        updateCountdown('cse', testDates.cse);
+      //  updateCountdown('cse', testDates.cse);
         updateCountdown('oopcse', testDates.oopcse);
      //   updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
