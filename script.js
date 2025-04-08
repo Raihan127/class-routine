@@ -3,21 +3,21 @@ function startCountdown() {
     // Test Dates
     const testDates = {
     //  eee: new Date("March 24, 2025 10:30:00").getTime(), 
-        math: new Date("March 18, 2025 13:45:00").getTime(),  // Change CT dates here, 24 hours
-         discrete: new Date("March 23, 2025 13:45:00").getTime(),
-          cse: new Date("March 16, 2025 13:45:00").getTime(),
-           oopcse: new Date("March 25, 2025 13:45:00").getTime(),
-           chemistry: new Date("March 20, 2025 13:45:00").getTime()
+     //   math: new Date("March 18, 2025 13:45:00").getTime(),  // Change CT dates here, 24 hours
+      //   discrete: new Date("March 23, 2025 13:45:00").getTime(),
+      //    cse: new Date("March 16, 2025 13:45:00").getTime(),
+           oopcse: new Date("April 13, 2025 13:30:00").getTime(),
+       //    chemistry: new Date("March 20, 2025 13:45:00").getTime()
     };
 
     // Update countdown every second
     setInterval(function() {
       //  updateCountdown('eee', testDates.eee);
-        updateCountdown('math', testDates.math);
-        updateCountdown('discrete', testDates.discrete);
-        updateCountdown('cse', testDates.cse);
+     //   updateCountdown('math', testDates.math);
+     //   updateCountdown('discrete', testDates.discrete);
+      //  updateCountdown('cse', testDates.cse);
         updateCountdown('oopcse', testDates.oopcse);
-        updateCountdown('chemistry', testDates.chemistry);
+     //   updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
 
@@ -76,24 +76,20 @@ function showCourseMaterial() {
         eee: {
             color: "#4CAF50", 
             items: [
-                { name: "বাংলাদেশ নামকরন", url: "https://drive.google.com/file/d/1wQwwUEOdxbfpgqHuGOR3ZTfCBK54valq/preview" },
-                { name: "India Independence Act 1947", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
-                { name: "১৯৫৬ সালের সংবিধান", url: "https://drive.google.com/file/d/1Hd0SapPcS9FaABYHZrpa1Jyy1Q-wwdM7/preview" },
-                { name: "ভাষা আন্দোলন", url: "https://drive.google.com/file/d/1vEGaVD6lmnIeneP8vSSfi5VmZLoiYviy/preview" },
-                { name: "যুক্তফ্রন্ট", url: "https://drive.google.com/file/d/1ncRpDP8mUtMbWsegEzqnVC7o60Kk7A5d/preview" },
+                { name: "মৌলিক গণতন্ত্র", url: "https://drive.google.com/file/d/1KhvH-icsC2oKitV5EkIl43QKC2J2JW2P/preview" },
             ],
         },
         cse: {
             color: "#2196F3", 
             items: [
-                { name: "Introduction to Java", url: "https://drive.google.com/file/d/1kWNco3EJtgt9Yb-idpdhDNNrR8m4t_ty/preview" },
+                { name: "Polymorphism", url: "https://drive.google.com/file/d/1aMkWhPrcNPXGuICtabLKvigi30pK8uOD/preview" },
          //       { name: "Software ", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
             ],
         },
         discrete: {
            color: "#483D8B", 
            items: [
-                { name: "Introduction", url: "https://drive.google.com/file/d/1sR1iuP5qs-TsuzzYqkJtWPyKh5-z6EU4/preview" },
+             //   { name: "Introduction", url: "https://drive.google.com/file/d/1sR1iuP5qs-TsuzzYqkJtWPyKh5-z6EU4/preview" },
         //        { name: "Algorithms in Discrete Structures", url: "https://drive.google.com/file/d/1x16dYBlhEB6C70-HWQ2S8qIrspd8Ma5y/preview" },
            ],
         },
