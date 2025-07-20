@@ -153,6 +153,6 @@ function showPDF(pdfUrl) {
 
 // Combined window.onload to avoid conflicts
 window.onload = function() {
-    showDay('sunday');
+    showDay('saturday');
     startCountdown();
 };
