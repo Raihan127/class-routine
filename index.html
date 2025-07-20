@@ -11,12 +11,13 @@
     <h1>Class Routine</h1>
     <nav>
         <ul>
+            <button class="day-button" onclick="showDay('saturday')">Saturday</button>
             <button class="day-button" onclick="showDay('sunday')">Sunday</button>
             <button class="day-button" onclick="showDay('monday')">Monday</button>
             <button class="day-button" onclick="showDay('tuesday')">Tuesday</button>
             <button class="day-button" onclick="showDay('wednesday')">Wednesday</button>
-            <button class="day-button" onclick="showDay('thursday')">Thursday</button>
-            <button class="test-button" onclick="showDay('class-test')">Final Exam</button>
+       <!-- <button class="day-button" onclick="showDay('thursday')">Thursday</button>  --> 
+            <button class="test-button" onclick="showDay('class-test')">Class Test</button>
      <!--   <button class="result-button" onclick="window.location.href='https://raihan127.github.io/Result-/'">Result</button> --> 
         </ul>
     </nav>
@@ -24,11 +25,11 @@
         <label for="subject-select">Course Materials:</label>
         <select id="subject-select" onchange="showCourseMaterial()">
             <option value="">--Choose a Subject--</option>
-            <option value="eee">BANGLA</option>
-            <option value="cse">CSE-OOD</option>
-            <option value="discrete">Data Structures</option>
-            <option value="chemistry">Digital System Design</option> 
-            <option value="math">MATH</option>
+            <option value="eee">Software Engineering & System Analysis</option>
+            <option value="cse">Computer Algorithms</option>
+            <option value="discrete">Numerical Methods</option>
+            <option value="chemistry">Computer Networks</option> 
+            <option value="math">Linear Algebra & Complex Variables</option>
         </select>
     </div>
 </header>
@@ -45,9 +46,8 @@
 
 
     <section id="routine">
-        <div id="sunday" class="day" >
-             <!--  <h2>Sunday</h2> -->
-          <h2 style="float: left;">Sunday</h2>
+         <div id="saturday" class="day" >
+          <h2 style="float: left;">Saturday</h2>
           <h2 style="text-align: right;">Section-D</h2>
             <table>
                 <tr>
@@ -57,22 +57,41 @@
                     <th>Room</th>
                 </tr>
                 <tr>   
-                    <td>11:50 AM - 1:15 PM</td>
-                    <td>CSE-OOD</td>
-                    <td>FIL</td>
-                    <td>313</td>
-                </tr>
-                <tr>   
                     <td>1:55 PM - 3:20 PM</td>
-                    <td>Bangla</td>
-                    <td>BAN</td>
-                    <td>NR2</td>
+                    <td>Numerical Methods Lab</td>
+                    <td>[AAP][RT]</td>
+                    <td>Lab-129</td>
                 </tr>
                 <tr>   
                     <td>3:20 PM - 4:45 PM</td>
                     <td>Math</td>
-                    <td>MR</td>
-                    <td>313</td>
+                    <td>AA</td>
+                    <td>411</td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="sunday" class="day" style="display:none;">
+          <h2 style="float: left;">Sunday</h2>
+          <h2 style="text-align: right;">Section-D</h2>
+             <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Course</th>
+                    <th>Teacher</th>
+                    <th>Room</th>
+                </tr>
+                <tr>   
+                    <td>1:55 PM - 3:20 PM</td>
+                    <td>Numerical Methods</td>
+                    <td>RT</td>
+                    <td>512</td>
+                </tr>
+                <tr>   
+                    <td>3:20 PM - 4:45 PM</td>
+                    <td>Math</td>
+                    <td>AA</td>
+                    <td>512</td>
                 </tr>
             </table>
         </div>
@@ -88,23 +107,17 @@
                     <th>Room</th>
                 </tr>
                 <tr>   
-                    <td>9:00 AM - 10:25 AM</td>
-                    <td>Data Structures</td>
-                    <td>SMT</td>
-                    <td>511</td>
+                    <td>11:50 AM - 1:15 PM</td>
+                    <td>Computer Networks Lab</td>
+                    <td>[AKI][FZ]</td>
+                    <td>Lab-104</td>
                 </tr>
-                <tr> 
-                    <td>10:25 AM - 11:50 AM</td>
-                    <td>Digital System Design Lab</td>
-                    <td>[JF][ZM]</td>
-                    <td>Lab-130</td>
-                </tr>     
-                <tr>   
+                 <tr>   
                     <td>1:55 PM - 3:20 PM</td>
-                    <td>Bangla</td>
-                    <td>BAN</td>
-                    <td>NR2</td>
-                </tr>
+                    <td>Computer Networks</td>
+                    <td>AKI</td>
+                    <td>1011</td>
+                </tr>     
             </table>
         </div>
 
@@ -120,21 +133,27 @@
                 </tr>
                 <tr> 
                     <td>9:00 AM - 10:25 AM</td>
-                    <td>CSE-OOD</td>
-                    <td>FIL</td>
-                    <td>411</td>
+                    <td>Computer Algorithms</td>
+                    <td>ST</td>
+                    <td>513</td>
                 </tr>
                 <tr>   
                     <td>10:25 AM - 11:50 AM</td>
-                    <td>Data Structures</td>
-                    <td>SMT</td>
-                    <td>511</td>
+                    <td>Software Engineering</td>
+                    <td>JC</td>
+                    <td>513</td>
                 </tr>
                 <tr>  
+                    <td>11:50 AM - 1:15 PM</td>
+                    <td>Numerical Methods</td>
+                    <td>RT</td>
+                    <td>513</td>
+                </tr>
+                 <tr>  
                     <td>1:55 PM - 3:20 PM</td>
-                    <td>Digital System Design</td>
-                    <td>ZM</td>
-                    <td>412</td>
+                    <td>Computer Networks</td>
+                    <td>AKI</td>
+                    <td>513</td>
                 </tr>
             </table>
         </div>
@@ -150,21 +169,27 @@
                     <th>Room</th>
                 </tr>
                 <tr>   
-                    <td>12:00 PM - 2:15 PM</td>
-                    <td>Data Structures Lab</td>
-                    <td>[SMT][IJR]</td>
-                    <td>Lab-104</td>
+                    <td>10:25 AM - 11:50 AM</td>
+                    <td>Computer Algorithms</td>
+                    <td>ST</td>
+                    <td>511</td>
                 </tr>
                 <tr>   
-                    <td>3:00 PM - 5:15 PM</td>
-                    <td>CSE-OOD Lab</td>
-                    <td>[NN][FIL]</td>
-                    <td>Lab-104</td>
+                    <td>11:50 AM - 1:15 PM</td>
+                    <td>Software Engineering</td>
+                    <td>JC</td>
+                    <td>511</td>
+                </tr>
+                  <tr>   
+                    <td>1:55 PM - 4:10 PM</td>
+                    <td>Computer Algorithms Lab</td>
+                    <td>[ST][AW]</td>
+                    <td>Lab-106</td>
                 </tr>
             </table>
         </div>
 
-
+ <!-- 
     <div id="thursday" class="day" style="display:none;">
         <h2 style="float: left;">Thursday</h2>
         <h2 style="text-align: right;">Section-D</h2>
@@ -188,7 +213,7 @@
                     <td>313</td>
                 </tr>             
             </table>
-        </div>
+        </div> -->
 
         
        <!-- Class Test Countdown Section -->
@@ -201,13 +226,13 @@
                   <p>Topic: <strong id="cse-topic">1'st CT er por theka sob</strong></p>   
                </div> 
 
-               <div class="divider"></div>  -->
+               <div class="divider"></div>  
               
 
                 <div id="test-discrete">
                     <p>Data Structures: <strong id="discrete-date">10:00 AM, 26 June, 2025</strong></p>
                     <p>Time Remaining: <strong id="discrete-remaining"></strong></p>
-               <!--    <p>Exam: <strong id="discrete-topic">Mid Lab Final</strong></p>   -->  
+                  <p>Exam: <strong id="discrete-topic">Mid Lab Final</strong></p>    
                  </div>
 
                <div class="divider"></div>  
@@ -215,7 +240,7 @@
             <div id="test-chemistry">
                 <p>CSE-OOD(Java): <strong id="chemistry-date">10:00 AM, 29 June, 2025</strong></p>
                 <p>Time Remaining: <strong id="chemistry-remaining"></strong></p>
-           <!--    <p>Exam Topic: <strong id="chemistry-topic">Slide(2,3,4)</strong></p>  -->  
+              <p>Exam Topic: <strong id="chemistry-topic">Slide(2,3,4)</strong></p>  
             </div> 
 
             <div class="divider"></div>  
@@ -224,7 +249,7 @@
               <div id="test-math">
                 <p>Digital System Design: <strong id="math-date">10:00 AM, 1 July, 2025</strong></p>
                 <p>Time Remaining: <strong id="math-remaining"></strong></p>
-             <!--    <p>Exam Topic: <strong id="math-topic">1'st chapter Homogeneous porjonto</strong></p>  -->
+               <p>Exam Topic: <strong id="math-topic">1'st chapter Homogeneous porjonto</strong></p>  
             </div>
 
              <div class="divider"></div>  
@@ -233,10 +258,10 @@
             <div id="test-oopcse">
                 <p>Bangla: <strong id="discrete-date">10:00 AM, 3 July 2025</strong></p>
                 <p>Time Remaining: <strong id="oopcse-remaining"></strong></p>
-         <!--   <p>Exam Topic: <strong id="discrete-topic">Quiz</strong></p>   --> 
+            <p>Exam Topic: <strong id="discrete-topic">Quiz</strong></p>   
             </div> 
 
-       <!--     <div class="divider"></div> 
+           <div class="divider"></div> 
 
 
                  <div id="test-eee">

@@ -3,21 +3,21 @@ function startCountdown() {
     // Test Dates
     const testDates = {
     //  eee: new Date("March 24, 2025 10:30:00").getTime(), 
-        math: new Date("July 01, 2025 10:00:00").getTime(),  // Change CT dates here, 24 hours
-         discrete: new Date("June 26, 2025 10:00:00").getTime(),
+      //  math: new Date("July 01, 2025 10:00:00").getTime(),  // Change CT dates here, 24 hours
+    //     discrete: new Date("June 26, 2025 10:00:00").getTime(),
       //    cse: new Date("June 23, 2025 10:00:00").getTime(),
-           oopcse: new Date("July 03, 2025 10:00:00").getTime(), 
-           chemistry: new Date("June 29, 2025 10:00:00").getTime(),
+       //    oopcse: new Date("July 03, 2025 10:00:00").getTime(), 
+       //    chemistry: new Date("June 29, 2025 10:00:00").getTime(),
     };
 
     // Update countdown every second
     setInterval(function() {
       //  updateCountdown('eee', testDates.eee);
-        updateCountdown('math', testDates.math);
-        updateCountdown('discrete', testDates.discrete);
+      //  updateCountdown('math', testDates.math);
+      //  updateCountdown('discrete', testDates.discrete);
      //   updateCountdown('cse', testDates.cse);
-        updateCountdown('oopcse', testDates.oopcse);
-        updateCountdown('chemistry', testDates.chemistry);
+     //   updateCountdown('oopcse', testDates.oopcse);
+     //   updateCountdown('chemistry', testDates.chemistry);
     }, 1000);
 }
 
@@ -76,20 +76,15 @@ function showCourseMaterial() {
         eee: {
             color: "#4CAF50", 
             items: [
-                { name: "৬ দফা আন্দোলন", url: "https://drive.google.com/file/d/1jNf5uUldwL5bmoWs-e8_4BwEY3EWddTt/preview" },
-                { name: "1969 গণ-অভ্যুত্থান", url: "https://drive.google.com/file/d/1bj3UyVX9qj6PYsSaieO0g4-xkM7Rf3AN/preview" },
-                { name: "অসহযোগ আন্দোলন", url: "https://drive.google.com/file/d/1cPr8pksy30NZBvuZAVqUL-tmfYiktFMa/preview" },
-                { name: " Genocide", url: "https://drive.google.com/file/d/1xtuYU909fMHfr5RLAJYV-xReb0WznICH/preview" },
-                { name: " মুজিবনগর সরকার", url: "https://drive.google.com/file/d/18VFik4VsJASEklt56eL1GAWIAgRl8il-/preview" },
-                { name: "পাকিস্তান বাহিনীর আত্মসমর্পন ও বাঙালির চূড়ান্ত বিজয়", url: "https://drive.google.com/file/d/1ByvZu6OlP7YR2GULs7FTjvNbyJdZm6oZ/preview" },
-                { name: "মুক্তিযুদ্ধে নারীর অবদান", url: "https://drive.google.com/file/d/1fw9vKZgGtKjkeaYIXycfJWulKpIokXfM/preview" },
+            //    { name: "৬ দফা আন্দোলন", url: "https://drive.google.com/file/d/1jNf5uUldwL5bmoWs-e8_4BwEY3EWddTt/preview" },
+             //   { name: "1969 গণ-অভ্যুত্থান", url: "https://drive.google.com/file/d/1bj3UyVX9qj6PYsSaieO0g4-xkM7Rf3AN/preview" },
             ],
         },
         cse: {
             color: "#2196F3", 
             items: [
-                { name: "Polymorphism", url: "https://drive.google.com/file/d/1aMkWhPrcNPXGuICtabLKvigi30pK8uOD/preview" },
-                { name: "Abstraction", url: "https://drive.google.com/file/d/1wT-5ZCFyElhjmNPsvrFNT5D8uN6tYGRR/preview" },
+              //  { name: "Polymorphism", url: "https://drive.google.com/file/d/1aMkWhPrcNPXGuICtabLKvigi30pK8uOD/preview" },
+              //  { name: "Abstraction", url: "https://drive.google.com/file/d/1wT-5ZCFyElhjmNPsvrFNT5D8uN6tYGRR/preview" },
             ],
         },
         discrete: {
