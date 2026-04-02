@@ -1,22 +1,27 @@
-const buttons = document.querySelectorAll("nav button");
-const days = document.querySelectorAll(".day");
+const html = document.documentElement;
+const sun  = document.getElementById('icon-sun');
+const moon = document.getElementById('icon-moon');
 
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    // Remove active class from all buttons
-    buttons.forEach((b) => b.classList.remove("active"));
-    // Add active to clicked button
-    btn.classList.add("active");
+function setTheme(t) {
+  html.setAttribute('data-theme', t);
+  sun.style.display  = t === 'dark' ? 'block' : 'none';
+  moon.style.display = t === 'dark' ? 'none'  : 'block';
+  localStorage.setItem('cr-theme', t);
+}
 
-    const dayId = btn.getAttribute("data-day");
+setTheme(localStorage.getItem('cr-theme') || 'light');
 
-    // Show selected day and hide others with fade effect
-    days.forEach((day) => {
-      if (day.id === dayId) {
-        day.classList.add("active");
-      } else {
-        day.classList.remove("active");
-      }
-    });
+document.getElementById('theme-toggle').addEventListener('click', () =>
+  setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light')
+);
+
+document.querySelectorAll('.day-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.day-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const id = btn.dataset.day;
+    document.querySelectorAll('.day').forEach(d =>
+      d.id === id ? d.classList.add('active') : d.classList.remove('active')
+    );
   });
 });
