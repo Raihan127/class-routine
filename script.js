@@ -9,7 +9,8 @@ function setTheme(t) {
   localStorage.setItem('cr-theme', t);
 }
 
-setTheme(localStorage.getItem('cr-theme') || 'light');
+setTheme(localStorage.getItem('cr-theme') || 'dark');
+// setTheme(localStorage.getItem('cr-theme') || 'light');
 
 document.getElementById('theme-toggle').addEventListener('click', () =>
   setTheme(html.getAttribute('data-theme') === 'light' ? 'dark' : 'light')
